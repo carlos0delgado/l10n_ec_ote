@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<odoo>
+    <data>
+        <record id="partner_form_view_ec" model="ir.ui.view">
+            <field name="name">OTE view_partner_form inherit</field>
+            <field name="model">res.partner</field>
+            <field name="priority">1000</field>
+            <field name="inherit_id" ref="base.view_partner_form"/>
+            <field name="arch" type="xml">
+                <field name='type' position="after">
+                    <field name="cedula" placeholder="cedula"/>
+                    <field name="f_nacimeinto" placeholder="Fecha De Nacimiento"/>
+                    <field name="genero"/>
+                    <field name="usertalla"/>
+                    <field name="nreferido"/>
+                    <field name="siexp"/>
+                    <field name="detalle"/>
+                    <field name="repersonal"/>
+                    <field name="rnpersonal"/>
+                    <field name="hojacv"/>
+                </field>
+                <field name='ref' position="before">
+                    <field name="fcedula" widget="image"/>
+                    <field name="fvacunacion" widget="image"/>
+                </field>
+            </field>
+        </record>
+   </data>
+</odoo>
