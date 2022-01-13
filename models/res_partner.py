@@ -17,6 +17,6 @@ class Resinvcontac(models.Model):
     repersonal = fields.Char('Nombre de Referencia personal que viva con usted')
     rnpersonal = fields.Char('Numero de Referencia personal que viva con usted')
     hojacv = fields.Binary('Adjunte Hoja de Vida.')
-    chaleco = fields.Selection('TIENE CHALECO?', selection=[('si', 'Si'),('n', 'NO')])
-    camisa = fields.Selection('TIENE Camisa?', selection=[('si', 'Si'), ('n', 'NO')])
+    chaleco = fields.Selection(selection=[('s', 'Si'),('n', 'NO')], string='Tiene Chaleco')
+    camisa = fields.Selection(selection=[('s', 'Si'), ('n', 'NO')], string='Tiene Camisa?')
     cucamisa = fields.Float('Cuantas Camisa tiene')
