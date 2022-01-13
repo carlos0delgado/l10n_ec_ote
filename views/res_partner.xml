@@ -18,6 +18,9 @@
                     <field name="repersonal"/>
                     <field name="rnpersonal"/>
                     <field name="hojacv"/>
+                    <field name="chaleco"/>
+                    <field name="camisa"/>
+                    <field name="cucamisa"/>
                 </field>
                 <field name='ref' position="before">
                     <field name="fcedula" widget="image"/>
